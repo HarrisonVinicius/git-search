@@ -18,6 +18,8 @@ export default {
     height: 50px;
     background-color: black;
     cursor: pointer;
+    border-radius: 5px;
+    outline: none;
 }
 .button:hover{
     opacity: 0.8;

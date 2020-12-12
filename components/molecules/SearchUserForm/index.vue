@@ -2,9 +2,10 @@
     <div class="search-user-form">
         <span class="search-user-form__title"> Search for github users </span>
         <div class="search-user-form__form">
-            <search-input dark hideButton/>
+            <search-input v-model="inputData" dark hideButton placeHolder="enter @username"/>
+            <span v-if="showFeedback" class="search-user-form__form__feedback"> username is required </span>
             <br/>
-            <basic-button> SEARCH REPOSITORY </basic-button>
+            <basic-button @click.native="searchHandler"> SEARCH REPOSITORY </basic-button>
         </div>
     </div>
 </template>
@@ -16,6 +17,26 @@ export default {
     components: {
         SearchInput,
         BasicButton
+    },
+    data: () => ({
+      inputData: null,
+      showFeedback: false
+    }),
+    watch: {
+        inputData: {
+            handler(){
+                this.inputData ? this.showFeedback = false : this.showFeedback = true
+            }
+        }
+    },
+    methods: {
+        searchHandler(){
+            if(this.inputData){
+                this.$router.push('/users')
+            } else {
+                this.showFeedback = true
+            }
+        }
     }
 }
 </script>
@@ -37,6 +58,10 @@ export default {
     &__form{
         width: 100%;
         padding-left: 5px;
+        &__feedback{
+            color: red;
+            padding-left: 22px;
+        }
     }
 }
 </style>

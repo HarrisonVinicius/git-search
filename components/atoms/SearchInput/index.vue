@@ -1,9 +1,9 @@
 <template>
   <div class="search-input">
-    <input :class="rootClasses" class="search-input__input" type="text" name="search">
+    <input v-model="inputData" :class="rootClasses" class="search-input__input" :placeholder="placeHolder" type="text" name="search">
     <button>
       <!-- obs: o vuetify esta sendo utilizado aqui apenas para o uso de icones -->
-      <v-icon v-if="!hideButton" color="darkIcon">mdi-magnify</v-icon>
+      <!-- <v-icon v-if="!hideButton" color="darkIcon" :disabled="!">mdi-magnify</v-icon> -->
     </button>
   </div>
 </template>
@@ -11,6 +11,9 @@
 <script>
 export default {
     name: 'SearchInput',
+    data: () => ({
+      inputData: null
+    }),
     props: {
       dark: {
         type: Boolean,
@@ -19,6 +22,10 @@ export default {
       hideButton: {
         type: Boolean,
         default: false
+      },
+      placeHolder: {
+        type: String,
+        default: 'placeholder'
       }
     },
     computed: {
@@ -29,6 +36,13 @@ export default {
             'search-input__input--dark': this.dark
           }
         ]
+      }
+    },
+    watch: {
+      inputData: {
+        handler(){
+          this.$emit('input', this.inputData)
+        }
       }
     }
 }
