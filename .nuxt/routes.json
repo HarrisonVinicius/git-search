@@ -1,12 +1,5 @@
 [
   {
-    "name": "inspire",
-    "path": "/inspire",
-    "component": "/home/rery/Documentos/git-search/pages/inspire.vue",
-    "chunkName": "pages/inspire",
-    "_name": "_6664df4d"
-  },
-  {
     "name": "index",
     "path": "/",
     "component": "/home/rery/Documentos/git-search/pages/index.vue",
