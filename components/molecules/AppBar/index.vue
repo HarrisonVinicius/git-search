@@ -1,13 +1,11 @@
 <template>
     <div class="bar-container">
-      <v-app-bar
-        class="bar-container__app-bar"
-        dark
-      >
-        <v-toolbar-title class="bar-container__app-bar__title">Git Search</v-toolbar-title>
-        <v-spacer v-for="(space, index) in spaces" :key="index"></v-spacer>
-        <search-input class="bar-container__app-bar__search-input"/>
-      </v-app-bar>
+      <div class="bar-container__title">
+        <span class="bar-container__title__text-decoration"> Git Search </span>
+      </div>
+      <div class="bar-container__search">
+        <search-input class="bar-container__search-input"/>
+      </div>
     </div>
 </template>
 
@@ -17,19 +15,23 @@ export default {
     name: 'AppBar',
     components: {
         SearchInput
-    },
-    data () {
-        return {
-            spaces: [1, 2, 3, 4]
-        }
     }
 }
 </script>
 
 <style lang="scss" scoped>
   .bar-container{
-    &__app-bar{
-      &__title {
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 300px;
+    padding-right: 300px;
+    &__title{
+      &__text-decoration{
+        color: #ffffff;
+        font-size: 22px;
         font-weight: 600;
       }
     }

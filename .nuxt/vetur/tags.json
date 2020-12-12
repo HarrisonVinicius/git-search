@@ -28,5 +28,11 @@
   },
   "LazyAppBar": {
     "description": "Auto imported from components/molecules/AppBar/index.vue"
+  },
+  "SearchUserForm": {
+    "description": "Auto imported from components/molecules/SearchUserForm/index.vue"
+  },
+  "LazySearchUserForm": {
+    "description": "Auto imported from components/molecules/SearchUserForm/index.vue"
   }
 }

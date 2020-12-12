@@ -1,16 +1,19 @@
 <template>
   <div class="home">
     <logo/>
+    <search-user-form/>
   </div>
 </template>
 
 <script>
 import { Logo } from "@/components/atoms";
+import { SearchUserForm } from "@/components/molecules";
 export default {
   name: 'index',
   layout: 'default',
   components: {
-    Logo
+    Logo,
+    SearchUserForm
   }
 }
 </script>
@@ -21,5 +24,6 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 </style>
