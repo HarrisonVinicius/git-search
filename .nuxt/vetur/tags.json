@@ -11,6 +11,12 @@
   "LazyMolecules": {
     "description": "Auto imported from components/molecules/index.js"
   },
+  "Logo": {
+    "description": "Auto imported from components/atoms/Logo/index.vue"
+  },
+  "LazyLogo": {
+    "description": "Auto imported from components/atoms/Logo/index.vue"
+  },
   "SearchInput": {
     "description": "Auto imported from components/atoms/SearchInput/index.vue"
   },
