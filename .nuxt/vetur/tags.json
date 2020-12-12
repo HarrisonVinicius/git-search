@@ -11,6 +11,12 @@
   "LazyMolecules": {
     "description": "Auto imported from components/molecules/index.js"
   },
+  "BasicButton": {
+    "description": "Auto imported from components/atoms/BasicButton/index.vue"
+  },
+  "LazyBasicButton": {
+    "description": "Auto imported from components/atoms/BasicButton/index.vue"
+  },
   "Logo": {
     "description": "Auto imported from components/atoms/Logo/index.vue"
   },

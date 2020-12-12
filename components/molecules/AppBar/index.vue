@@ -1,7 +1,7 @@
 <template>
     <div class="bar-container">
       <div class="bar-container__title">
-        <span class="bar-container__title__text-decoration"> Git Search </span>
+        <span class="bar-container__title__text-decoration"> Git Repository Search </span>
       </div>
       <div class="bar-container__search">
         <search-input class="bar-container__search-input"/>
@@ -26,8 +26,8 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 15px;
+    padding-right: 15px;
     &__title{
       &__text-decoration{
         color: #ffffff;
