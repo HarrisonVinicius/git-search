@@ -1,1 +1,26 @@
-{}
+{
+  "Atoms": {
+    "description": "Auto imported from components/atoms/index.js"
+  },
+  "LazyAtoms": {
+    "description": "Auto imported from components/atoms/index.js"
+  },
+  "Molecules": {
+    "description": "Auto imported from components/molecules/index.js"
+  },
+  "LazyMolecules": {
+    "description": "Auto imported from components/molecules/index.js"
+  },
+  "SearchInput": {
+    "description": "Auto imported from components/atoms/SearchInput/index.vue"
+  },
+  "LazySearchInput": {
+    "description": "Auto imported from components/atoms/SearchInput/index.vue"
+  },
+  "AppBar": {
+    "description": "Auto imported from components/molecules/AppBar/index.vue"
+  },
+  "LazyAppBar": {
+    "description": "Auto imported from components/molecules/AppBar/index.vue"
+  }
+}

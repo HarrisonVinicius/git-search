@@ -1,5 +1,12 @@
 [
   {
+    "name": "users",
+    "path": "/users",
+    "component": "/home/rery/Documentos/git-search/pages/users/index.vue",
+    "chunkName": "pages/users/index",
+    "_name": "_48ad4704"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "/home/rery/Documentos/git-search/pages/index.vue",
