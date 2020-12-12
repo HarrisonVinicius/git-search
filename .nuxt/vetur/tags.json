@@ -1,10 +1,4 @@
 {
-  "Atoms": {
-    "description": "Auto imported from components/atoms/index.js"
-  },
-  "LazyAtoms": {
-    "description": "Auto imported from components/atoms/index.js"
-  },
   "Molecules": {
     "description": "Auto imported from components/molecules/index.js"
   },
@@ -17,23 +11,11 @@
   "LazyOrganisms": {
     "description": "Auto imported from components/organisms/index.js"
   },
-  "Logo": {
-    "description": "Auto imported from components/atoms/Logo/index.vue"
+  "Atoms": {
+    "description": "Auto imported from components/atoms/index.js"
   },
-  "LazyLogo": {
-    "description": "Auto imported from components/atoms/Logo/index.vue"
-  },
-  "BasicButton": {
-    "description": "Auto imported from components/atoms/BasicButton/index.vue"
-  },
-  "LazyBasicButton": {
-    "description": "Auto imported from components/atoms/BasicButton/index.vue"
-  },
-  "SearchInput": {
-    "description": "Auto imported from components/atoms/SearchInput/index.vue"
-  },
-  "LazySearchInput": {
-    "description": "Auto imported from components/atoms/SearchInput/index.vue"
+  "LazyAtoms": {
+    "description": "Auto imported from components/atoms/index.js"
   },
   "AppBar": {
     "description": "Auto imported from components/molecules/AppBar/index.vue"
@@ -58,5 +40,23 @@
   },
   "LazyUsersList": {
     "description": "Auto imported from components/organisms/UsersList/index.vue"
+  },
+  "BasicButton": {
+    "description": "Auto imported from components/atoms/BasicButton/index.vue"
+  },
+  "LazyBasicButton": {
+    "description": "Auto imported from components/atoms/BasicButton/index.vue"
+  },
+  "Logo": {
+    "description": "Auto imported from components/atoms/Logo/index.vue"
+  },
+  "LazyLogo": {
+    "description": "Auto imported from components/atoms/Logo/index.vue"
+  },
+  "SearchInput": {
+    "description": "Auto imported from components/atoms/SearchInput/index.vue"
+  },
+  "LazySearchInput": {
+    "description": "Auto imported from components/atoms/SearchInput/index.vue"
   }
 }
