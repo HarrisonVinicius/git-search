@@ -4,17 +4,25 @@
             <img class="avatar-card__image" src="@/assets/hub.png" alt="avatar">
         </div>
         <div class="repositories-list-item__title">
-            <span class="repositories-list-item__title__text-decoration"> Repository title </span>
+            <span class="repositories-list-item__title__text-decoration"> {{itemData.title}} </span>
+            <span class="repositories-list-item__title__text-decoration-description"> {{itemData.description}}</span>
+            <div class="repositories-list-item__title__star">
+                <img class="repositories-list-item__title__star__image" src="@/assets/star.png" alt="star">
+                <span class="repositories-list-item__title__text-decoration-description"> {{itemData.stars}}</span>
+            </div>
         </div>
-        <div class="repositories-list-item__action">
-            <span> salvar </span>
-        </div>  
     </div>  
 </template>
 
 <script>
 export default {
-    name:'RepositoriesListItem'
+    name:'RepositoriesListItem',
+    props: {
+        itemData: {
+            type: Object,
+            default: () => {}
+        }
+    }
 }
 </script>
 
@@ -32,10 +40,24 @@ export default {
     &__title{
         height: 100%;
         width: 85%;
+        display: flex;
+        flex-direction: column;
         &__text-decoration{
-            color: black;
             font-size: 20px;
             margin-left: 15px;
+        }
+        &__text-decoration-description{
+            font-size: 18px;
+            margin-left: 15px;
+            margin-top: 5px;
+        }
+        &__star{
+            &__image{
+                height: 20px;
+                width: 20px;
+                margin-left: 13px;
+                margin-top: 5px;
+            }
         }
     }
     &__action{

@@ -1,18 +1,10 @@
 <template>
-  <v-app class="app">
+  <div class="app">
     <app-bar />
-    <v-main>
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-main>
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
-      <span>&copy; Dasa {{ new Date().getFullYear() }}</span>
-    </v-footer>
-  </v-app>
+    <div class="app__content">
+      <nuxt />
+    </div>
+  </div>
 </template>
 
 <script>
@@ -33,5 +25,9 @@ export default {
 <style lang="scss" scoped>
 .app{
   background-color: #fff;
+  &__content{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 </style>

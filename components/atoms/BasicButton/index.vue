@@ -20,6 +20,7 @@ export default {
     cursor: pointer;
     border-radius: 5px;
     outline: none;
+    color: #fff
 }
 .button:hover{
     opacity: 0.8;

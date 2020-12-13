@@ -1,11 +1,11 @@
 <template>
     <div class="users-list">
         <div class="users-list__header">
-            <span class="users-list__header__text-decoration"> @user's Repositories </span>
+            <span class="users-list__header__text-decoration"> Repositories </span>
             <basic-button class="users-list__header__button" @click.native="returnHandler"> VOLTAR </basic-button>
         </div>
         <div class="users-list__repositories-list">
-            <repositories-list-item v-for="(item, index) in listItems" :key="index"/>
+            <repositories-list-item v-for="(item, index) in listItems" :key="index" :itemData="item"/>
         </div>
     </div>
 </template>
@@ -20,23 +20,22 @@ export default {
         BasicButton,
         RepositoriesListItem
     },
-    data: () => ({
-        items: [1,2,3,4,5,6]
-    }),
     computed: {
         ...mapState({
             listData: state => state.userData.userData
         }),
         listItems() {
             return (this.listData || []).map(item => ({
-                title: (item.name || {}),
-                description: (item.description)
+                title: (item.name || ''),
+                description: (item.description || ''),
+                stars: (item.stargazers_count )
             }))
         }
 
     },
     mounted() {
         console.log(this.listItems)
+        console.log(this.listData)
     },
     methods: {
         returnHandler(){
@@ -60,6 +59,7 @@ export default {
         }
         &__button{
             width: 100px;
+            color: #fff
         }
     }
     &__repositories-list{
