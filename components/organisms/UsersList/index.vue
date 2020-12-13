@@ -5,12 +5,13 @@
             <basic-button class="users-list__header__button" @click.native="returnHandler"> VOLTAR </basic-button>
         </div>
         <div class="users-list__repositories-list">
-            <repositories-list-item v-for="(item, index) in items" :key="index"/>
+            <repositories-list-item v-for="(item, index) in listItems" :key="index"/>
         </div>
     </div>
 </template>
 
 <script>
+import { mapState } from "vuex";
 import { BasicButton } from "@/components/atoms";
 import { RepositoriesListItem } from "@/components/molecules";
 export default {
@@ -22,6 +23,21 @@ export default {
     data: () => ({
         items: [1,2,3,4,5,6]
     }),
+    computed: {
+        ...mapState({
+            listData: state => state.userData.userData
+        }),
+        listItems() {
+            return (this.listData || []).map(item => ({
+                title: (item.name || {}),
+                description: (item.description)
+            }))
+        }
+
+    },
+    mounted() {
+        console.log(this.listItems)
+    },
     methods: {
         returnHandler(){
             this.$router.push('/')

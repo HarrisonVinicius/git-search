@@ -11,6 +11,7 @@
 </template>
 
 <script>
+import { mapState , mapActions } from "vuex";
 import { SearchInput , BasicButton } from "@/components/atoms";
 export default {
     name: 'SearchUserForm',
@@ -30,8 +31,12 @@ export default {
         }
     },
     methods: {
-        searchHandler(){
+        ...mapActions({
+            getUserData: 'userData/FETCH_USER_DATA'
+        }),
+        async searchHandler(){
             if(this.inputData){
+                await this.getUserData(this.inputData)
                 this.$router.push('/users')
             } else {
                 this.showFeedback = true
