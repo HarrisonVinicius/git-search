@@ -5,7 +5,7 @@
       <nuxt/>
     </div>
     <div class="app__footer">
-      <span class="app__footer__text">&copy; 2020 Dasa </span>
+      <span class="app__footer__text">&copy; 2020 Dasa Project </span>
     </div>
   </div>
 </template>
