@@ -3,19 +3,15 @@
       <div class="bar-container__title">
         <span class="bar-container__title__text-decoration"> Git Repository Search </span>
       </div>
-      <div class="bar-container__search">
-        <search-input class="bar-container__search-input"/>
+      <div class="bar-container__logo">
+        <img class="bar-container__logo__image" src="@/assets/index.png" alt="logo">
       </div>
     </div>
 </template>
 
 <script>
-import { SearchInput } from "@/components/atoms";
 export default {
     name: 'AppBar',
-    components: {
-        SearchInput
-    }
 }
 </script>
 
@@ -33,6 +29,16 @@ export default {
         color: #ffffff;
         font-size: 22px;
         font-weight: 600;
+      }
+    }
+    &__logo{
+      height: 30px;
+      width: 30px;
+      background-color: #fff;
+      border-radius: 25px;
+      &__image{
+        height: 100%;
+        width: 100%;
       }
     }
   }
