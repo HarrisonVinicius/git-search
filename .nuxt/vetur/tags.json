@@ -23,17 +23,17 @@
   "LazyBasicButton": {
     "description": "Auto imported from components/atoms/BasicButton/index.vue"
   },
-  "SearchInput": {
-    "description": "Auto imported from components/atoms/SearchInput/index.vue"
-  },
-  "LazySearchInput": {
-    "description": "Auto imported from components/atoms/SearchInput/index.vue"
-  },
   "Logo": {
     "description": "Auto imported from components/atoms/Logo/index.vue"
   },
   "LazyLogo": {
     "description": "Auto imported from components/atoms/Logo/index.vue"
+  },
+  "SearchInput": {
+    "description": "Auto imported from components/atoms/SearchInput/index.vue"
+  },
+  "LazySearchInput": {
+    "description": "Auto imported from components/atoms/SearchInput/index.vue"
   },
   "AppBar": {
     "description": "Auto imported from components/molecules/AppBar/index.vue"
