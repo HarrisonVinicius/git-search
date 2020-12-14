@@ -30,13 +30,15 @@ export default {
         listItems() {
             return (this.listData || []).map(item => ({
                 title: (item.name || {}),
-                description: (item.description)
+                description: (item.description),
+                stars: (item)
             }))
         }
 
     },
     mounted() {
         console.log(this.listItems)
+        console.log(this.listData)
     },
     methods: {
         returnHandler(){
