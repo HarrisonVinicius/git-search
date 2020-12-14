@@ -35,12 +35,6 @@
   "LazySearchInput": {
     "description": "Auto imported from components/atoms/SearchInput/index.vue"
   },
-  "AppBar": {
-    "description": "Auto imported from components/molecules/AppBar/index.vue"
-  },
-  "LazyAppBar": {
-    "description": "Auto imported from components/molecules/AppBar/index.vue"
-  },
   "RepositoriesListItem": {
     "description": "Auto imported from components/molecules/RepositoriesListItem/index.vue"
   },
@@ -52,6 +46,12 @@
   },
   "LazySearchUserForm": {
     "description": "Auto imported from components/molecules/SearchUserForm/index.vue"
+  },
+  "AppBar": {
+    "description": "Auto imported from components/molecules/AppBar/index.vue"
+  },
+  "LazyAppBar": {
+    "description": "Auto imported from components/molecules/AppBar/index.vue"
   },
   "UsersList": {
     "description": "Auto imported from components/organisms/UsersList/index.vue"

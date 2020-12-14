@@ -17,6 +17,7 @@ export default {
     align-items: center;
     height: 50px;
     background-color: black;
+    color: white;
     cursor: pointer;
     border-radius: 5px;
     outline: none;
