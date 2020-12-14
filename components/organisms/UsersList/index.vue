@@ -1,7 +1,7 @@
 <template>
     <div class="users-list">
         <div class="users-list__header">
-            <span class="users-list__header__text-decoration"> @{{listItems[0].owner}}'s Repositories </span>
+            <span class="users-list__header__text-decoration"> @{{userNameFromStorage}}'s Repositories </span>
             <basic-button class="users-list__header__button" @click.native="returnHandler"> VOLTAR </basic-button>
         </div>
         <div class="users-list__repositories-list">
@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState , mapActions } from "vuex";
 import { BasicButton } from "@/components/atoms";
 import { RepositoriesListItem } from "@/components/molecules";
 export default {
@@ -20,6 +20,9 @@ export default {
         BasicButton,
         RepositoriesListItem
     },
+    data: () => ({
+        userNameFromStorage: ''
+    }),
     computed: {
         ...mapState({
             listData: state => state.userData.userData
@@ -31,14 +34,16 @@ export default {
                 stars: (item.stargazers_count),
                 owner: (item.owner.login || '')
             }))
-        },
-
+        }
     },
     mounted() {
-        console.log(this.listItems)
-        console.log(this.listData)
+        this.userNameFromStorage = sessionStorage.getItem('userName')
+        this.listData.length !== 0 ? console.log('tem dados') : this.getUserData(this.userNameFromStorage)
     },
     methods: {
+        ...mapActions({
+            getUserData: 'userData/FETCH_USER_DATA'
+        }),
         returnHandler(){
             this.$router.push('/')
         }

@@ -37,6 +37,7 @@ export default {
         async searchHandler(){
             if(this.inputData){
                 await this.getUserData(this.inputData)
+                sessionStorage.setItem('userName', this.inputData)
                 this.$router.push('/users')
             } else {
                 this.showFeedback = true
