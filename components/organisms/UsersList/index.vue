@@ -21,7 +21,8 @@ export default {
         RepositoriesListItem
     },
     data: () => ({
-        userNameFromStorage: ''
+        userNameFromStorage: '',
+        hasData: false
     }),
     computed: {
         ...mapState({
@@ -38,7 +39,7 @@ export default {
     },
     mounted() {
         this.userNameFromStorage = sessionStorage.getItem('userName')
-        this.listData.length !== 0 ? console.log('tem dados') : this.getUserData(this.userNameFromStorage)
+        this.listData.length !== 0 ? this.hasData = true : this.getUserData(this.userNameFromStorage)
     },
     methods: {
         ...mapActions({
