@@ -1,7 +1,7 @@
 <template>
     <div class="users-list">
         <div class="users-list__header">
-            <span class="users-list__header__text-decoration"> @user's Repositories </span>
+            <span class="users-list__header__text-decoration"> @{{listItems[0].owner}}'s Repositories </span>
             <basic-button class="users-list__header__button" @click.native="returnHandler"> VOLTAR </basic-button>
         </div>
         <div class="users-list__repositories-list">
@@ -28,9 +28,10 @@ export default {
             return (this.listData || []).map(item => ({
                 title: (item.name || {} || ''),
                 description: (item.description || ''),
-                stars: (item.stargazers_count)
+                stars: (item.stargazers_count),
+                owner: (item.owner.login || '')
             }))
-        }
+        },
 
     },
     mounted() {
