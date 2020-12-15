@@ -12,13 +12,14 @@
   "dependencies": {
     "@babel/preset-env": "^7.12.10",
     "@nuxtjs/axios": "^5.12.2",
-    "core-js": "^3.6.5",
+    "core-js": "^2.6.5",
     "eslint-loader": "^4.0.2",
     "nuxt": "^2.14.6",
     "vue": "^2.6.12",
     "vue-server-renderer": "^2.6.12"
   },
   "devDependencies": {
+    "@nuxt/babel-preset-app": "^2.14.11",
     "@nuxtjs/vuetify": "^1.11.2",
     "@vue/test-utils": "^1.1.0",
     "babel-core": "7.0.0-bridge.0",

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1608038173814" clover="3.2.0">
-  <project timestamp="1608038173814" name="All files">
-    <metrics statements="23" coveredstatements="0" conditionals="20" coveredconditionals="0" methods="13" coveredmethods="0" elements="56" coveredelements="0" complexity="0" loc="23" ncloc="23" packages="6" files="6" classes="6"/>
+<coverage generated="1608041759413" clover="3.2.0">
+  <project timestamp="1608041759414" name="All files">
+    <metrics statements="23" coveredstatements="2" conditionals="20" coveredconditionals="0" methods="13" coveredmethods="0" elements="56" coveredelements="2" complexity="0" loc="23" ncloc="23" packages="6" files="6" classes="6"/>
     <package name="components.atoms.SearchInput">
       <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="index.vue" path="/home/harrison.silva/Projetos/git-search/components/atoms/SearchInput/index.vue">
@@ -18,11 +18,11 @@
       </file>
     </package>
     <package name="components.molecules.SearchUserForm">
-      <metrics statements="8" coveredstatements="0" conditionals="9" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <metrics statements="8" coveredstatements="2" conditionals="9" coveredconditionals="0" methods="3" coveredmethods="0"/>
       <file name="index.vue" path="/home/harrison.silva/Projetos/git-search/components/molecules/SearchUserForm/index.vue">
-        <metrics statements="8" coveredstatements="0" conditionals="9" coveredconditionals="0" methods="3" coveredmethods="0"/>
-        <line num="19" count="0" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
+        <metrics statements="8" coveredstatements="2" conditionals="9" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
         <line num="28" count="0" type="stmt"/>
         <line num="38" count="0" type="cond" truecount="0" falsecount="2"/>
         <line num="48" count="0" type="cond" truecount="0" falsecount="7"/>
