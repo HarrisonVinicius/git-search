@@ -23,6 +23,7 @@ $ yarn test
 # some improvements need to be implemented in the application such as error handling in the search for user or e2e tests
 # the TDD methodology was not used in the implementation of this application
 # the BEM CSS methodology was used in this project
+# this application makes use of the atomic design implementation
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
