@@ -2,15 +2,15 @@
   {
     "name": "users",
     "path": "/users",
-    "component": "/home/rery/Documentos/git-search/pages/users/index.vue",
+    "component": "/home/harrison.silva/Projetos/git-search/pages/users/index.vue",
     "chunkName": "pages/users/index",
-    "_name": "_48ad4704"
+    "_name": "_f02fb8f0"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/home/rery/Documentos/git-search/pages/index.vue",
+    "component": "/home/harrison.silva/Projetos/git-search/pages/index.vue",
     "chunkName": "pages/index",
-    "_name": "_065dd405"
+    "_name": "_5ed92a8f"
   }
 ]
