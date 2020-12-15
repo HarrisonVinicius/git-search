@@ -5,17 +5,17 @@
   "LazyAtoms": {
     "description": "Auto imported from components/atoms/index.js"
   },
-  "Molecules": {
-    "description": "Auto imported from components/molecules/index.js"
-  },
-  "LazyMolecules": {
-    "description": "Auto imported from components/molecules/index.js"
-  },
   "Organisms": {
     "description": "Auto imported from components/organisms/index.js"
   },
   "LazyOrganisms": {
     "description": "Auto imported from components/organisms/index.js"
+  },
+  "Molecules": {
+    "description": "Auto imported from components/molecules/index.js"
+  },
+  "LazyMolecules": {
+    "description": "Auto imported from components/molecules/index.js"
   },
   "BasicButton": {
     "description": "Auto imported from components/atoms/BasicButton/index.vue"
@@ -35,17 +35,17 @@
   "LazySearchInput": {
     "description": "Auto imported from components/atoms/SearchInput/index.vue"
   },
+  "UsersList": {
+    "description": "Auto imported from components/organisms/UsersList/index.vue"
+  },
+  "LazyUsersList": {
+    "description": "Auto imported from components/organisms/UsersList/index.vue"
+  },
   "RepositoriesListItem": {
     "description": "Auto imported from components/molecules/RepositoriesListItem/index.vue"
   },
   "LazyRepositoriesListItem": {
     "description": "Auto imported from components/molecules/RepositoriesListItem/index.vue"
-  },
-  "SearchUserForm": {
-    "description": "Auto imported from components/molecules/SearchUserForm/index.vue"
-  },
-  "LazySearchUserForm": {
-    "description": "Auto imported from components/molecules/SearchUserForm/index.vue"
   },
   "AppBar": {
     "description": "Auto imported from components/molecules/AppBar/index.vue"
@@ -53,10 +53,10 @@
   "LazyAppBar": {
     "description": "Auto imported from components/molecules/AppBar/index.vue"
   },
-  "UsersList": {
-    "description": "Auto imported from components/organisms/UsersList/index.vue"
+  "SearchUserForm": {
+    "description": "Auto imported from components/molecules/SearchUserForm/index.vue"
   },
-  "LazyUsersList": {
-    "description": "Auto imported from components/organisms/UsersList/index.vue"
+  "LazySearchUserForm": {
+    "description": "Auto imported from components/molecules/SearchUserForm/index.vue"
   }
 }
