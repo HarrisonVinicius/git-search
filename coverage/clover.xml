@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1608056476306" clover="3.2.0">
-  <project timestamp="1608056476306" name="All files">
-    <metrics statements="25" coveredstatements="10" conditionals="20" coveredconditionals="6" methods="15" coveredmethods="7" elements="60" coveredelements="23" complexity="0" loc="25" ncloc="25" packages="7" files="7" classes="7"/>
+<coverage generated="1608062282483" clover="3.2.0">
+  <project timestamp="1608062282489" name="All files">
+    <metrics statements="24" coveredstatements="10" conditionals="20" coveredconditionals="6" methods="14" coveredmethods="7" elements="58" coveredelements="23" complexity="0" loc="24" ncloc="24" packages="7" files="7" classes="7"/>
     <package name="components.atoms.BasicButton">
       <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.vue" path="/home/harrison.silva/Projetos/git-search/components/atoms/BasicButton/index.vue">
@@ -39,19 +39,18 @@
       </file>
     </package>
     <package name="components.organisms.UsersList">
-      <metrics statements="10" coveredstatements="0" conditionals="11" coveredconditionals="0" methods="7" coveredmethods="0"/>
+      <metrics statements="9" coveredstatements="0" conditionals="11" coveredconditionals="0" methods="6" coveredmethods="0"/>
       <file name="index.vue" path="/home/harrison.silva/Projetos/git-search/components/organisms/UsersList/index.vue">
-        <metrics statements="10" coveredstatements="0" conditionals="11" coveredconditionals="0" methods="7" coveredmethods="0"/>
+        <metrics statements="9" coveredstatements="0" conditionals="11" coveredconditionals="0" methods="6" coveredmethods="0"/>
         <line num="36" count="0" type="stmt"/>
         <line num="37" count="0" type="stmt"/>
         <line num="38" count="0" type="stmt"/>
         <line num="45" count="0" type="stmt"/>
         <line num="54" count="0" type="stmt"/>
         <line num="58" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="69" count="0" type="stmt"/>
-        <line num="72" count="0" type="cond" truecount="0" falsecount="2"/>
-        <line num="83" count="0" type="stmt"/>
-        <line num="86" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="71" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="82" count="0" type="stmt"/>
       </file>
     </package>
     <package name="pages">

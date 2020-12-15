@@ -65,8 +65,7 @@ export default {
   },
   mounted() {
     // here sessionstorage is accessed as soon as the component is assembled
-    // this.userNameFromStorage = sessionStorage.getItem('userName')
-    this.setUserNameHandler();
+    this.userNameFromStorage = sessionStorage.getItem("userName");
     // here it is decided if a new request is made if the username saved in sessionstorage will be used
     // first checking for data in the store
     this.listData.length !== 0
@@ -81,9 +80,6 @@ export default {
     // this method redirects the user to the home page when called
     returnHandler() {
       this.$router.push("/");
-    },
-    setUserNameHandler() {
-      this.userNameFromStorage = sessionStorage.getItem("userName");
     },
   },
 };
