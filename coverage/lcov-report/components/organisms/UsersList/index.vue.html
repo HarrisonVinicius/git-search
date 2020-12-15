@@ -25,7 +25,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>0/10</span>
             </div>
         
             
@@ -39,14 +39,14 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/6</span>
+                <span class='fraction'>0/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">0% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/9</span>
+                <span class='fraction'>0/10</span>
             </div>
         
             
@@ -152,7 +152,35 @@
 <a name='L93'></a><a href='#L93'>93</a>
 <a name='L94'></a><a href='#L94'>94</a>
 <a name='L95'></a><a href='#L95'>95</a>
-<a name='L96'></a><a href='#L96'>96</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L96'></a><a href='#L96'>96</a>
+<a name='L97'></a><a href='#L97'>97</a>
+<a name='L98'></a><a href='#L98'>98</a>
+<a name='L99'></a><a href='#L99'>99</a>
+<a name='L100'></a><a href='#L100'>100</a>
+<a name='L101'></a><a href='#L101'>101</a>
+<a name='L102'></a><a href='#L102'>102</a>
+<a name='L103'></a><a href='#L103'>103</a>
+<a name='L104'></a><a href='#L104'>104</a>
+<a name='L105'></a><a href='#L105'>105</a>
+<a name='L106'></a><a href='#L106'>106</a>
+<a name='L107'></a><a href='#L107'>107</a>
+<a name='L108'></a><a href='#L108'>108</a>
+<a name='L109'></a><a href='#L109'>109</a>
+<a name='L110'></a><a href='#L110'>110</a>
+<a name='L111'></a><a href='#L111'>111</a>
+<a name='L112'></a><a href='#L112'>112</a>
+<a name='L113'></a><a href='#L113'>113</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -208,16 +236,22 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -248,108 +282,125 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
-    &lt;!-- 
+  &lt;!-- 
         this component is responsible for showing the user's list of repositories. 
         this component is filled with data from the store.
         this component has child components.
     --&gt;
-    &lt;div class="users-list"&gt;
-        &lt;div class="users-list__header"&gt;
-            &lt;!-- here the username saved in sessionstorage is being retrieved --&gt;
-            &lt;span class="users-list__header__text-decoration"&gt; @{{userNameFromStorage}}'s Repositories &lt;/span&gt;
-            &lt;!-- when clicked this button redirects the user to the initial page of the application --&gt;
-            &lt;basic-button class="users-list__header__button" @click.native="returnHandler"&gt; VOLTAR &lt;/basic-button&gt;
-        &lt;/div&gt;
-        &lt;div class="users-list__repositories-list"&gt;
-            &lt;!-- 
+  &lt;div class="users-list"&gt;
+    &lt;div class="users-list__header"&gt;
+      &lt;!-- here the username saved in sessionstorage is being retrieved --&gt;
+      &lt;span class="users-list__header__text-decoration"&gt;
+        @{{ userNameFromStorage }}'s Repositories
+      &lt;/span&gt;
+      &lt;!-- when clicked this button redirects the user to the initial page of the application --&gt;
+      &lt;basic-button
+        class="users-list__header__button"
+        @click.native="returnHandler"
+      &gt;
+        VOLTAR
+      &lt;/basic-button&gt;
+    &lt;/div&gt;
+    &lt;div class="users-list__repositories-list"&gt;
+      &lt;!-- 
                 here is the list of user repositories. 
                 the data for each item in the list is passed through the itemData prop.
             --&gt;
-            &lt;repositories-list-item v-for="(item, index) in listItems" :key="index" :itemData="item"/&gt;
-        &lt;/div&gt;
+      &lt;repositories-list-item
+        v-for="(item, index) in listItems"
+        :key="index"
+        :itemData="item"
+      /&gt;
     &lt;/div&gt;
+  &lt;/div&gt;
 &lt;/template&gt;
 &nbsp;
 &lt;script&gt;
-<span class="cstat-no" title="statement not covered" >import { mapState , mapActions } from "vuex";</span>
+<span class="cstat-no" title="statement not covered" >import { mapState, mapActions } from "vuex";</span>
 <span class="cstat-no" title="statement not covered" >import { BasicButton } from "@/components/atoms";</span>
 <span class="cstat-no" title="statement not covered" >import { RepositoriesListItem } from "@/components/molecules";</span>
 export default {
-    name: 'UsersList',
-    components: {
-        BasicButton,
-        RepositoriesListItem
-    },
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >    data: () =&gt; ({</span></span>
-        // here the username from sessionstorage is stored
-        userNameFromStorage: '',
-        // this boolean only records if there is data in the store
-        hasData: false
+  name: "UsersList",
+  components: {
+    BasicButton,
+    RepositoriesListItem,
+  },
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >  data: () =&gt; ({</span></span>
+    // here the username from sessionstorage is stored
+    userNameFromStorage: "",
+    // this boolean only records if there is data in the store
+    hasData: false,
+  }),
+  computed: {
+    // here is the location where the list data is stored in the store
+    ...mapState({
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      listData: (state) =&gt; state.userData.userData,</span></span>
     }),
-    computed: {
-        // here is the location where the list data is stored in the store
-        ...mapState({
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >            listData: state =&gt; state.userData.userData</span></span>
-        }),
-        // this computed property returns a list of data adapted for the child component that will use it
-<span class="fstat-no" title="function not covered" >        listItems() {</span>
-<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >            return (this.listData || []).map(item =&gt; ({</span></span>
-                title: (item.name || {} || ''),
-                description: (item.description || ''),
-                stars: (item.stargazers_count),
-                owner: (item.owner.login || '')
-            }))
-        }
+    // this computed property returns a list of data adapted for the child component that will use it
+<span class="fstat-no" title="function not covered" >    listItems() {</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >      return (this.listData || []).map((item) =&gt; ({</span></span>
+        title: item.name || {} || "",
+        description: item.description || "",
+        stars: item.stargazers_count,
+        owner: item.owner.login || "",
+      }));
     },
-<span class="fstat-no" title="function not covered" >    mounted() {</span>
-        // here sessionstorage is accessed as soon as the component is assembled
-<span class="cstat-no" title="statement not covered" >        this.userNameFromStorage = sessionStorage.getItem('userName')</span>
-        // here it is decided if a new request is made if the username saved in sessionstorage will be used
-        // first checking for data in the store
-<span class="cstat-no" title="statement not covered" >        this.listData.length !== 0 ? this.hasData = true : this.getUserData(this.userNameFromStorage)</span>
+  },
+<span class="fstat-no" title="function not covered" >  mounted() {</span>
+    // here sessionstorage is accessed as soon as the component is assembled
+    // this.userNameFromStorage = sessionStorage.getItem('userName')
+<span class="cstat-no" title="statement not covered" >    this.setUserNameHandler();</span>
+    // here it is decided if a new request is made if the username saved in sessionstorage will be used
+    // first checking for data in the store
+<span class="cstat-no" title="statement not covered" >    this.listData.length !== 0</span>
+      ? (this.hasData = true)
+      : this.getUserData(this.userNameFromStorage);
+  },
+  methods: {
+    // this action is called if the store is empty to ensure that there is data
+    ...mapActions({
+      getUserData: "userData/FETCH_USER_DATA",
+    }),
+    // this method redirects the user to the home page when called
+<span class="fstat-no" title="function not covered" >    returnHandler() {</span>
+<span class="cstat-no" title="statement not covered" >      this.$router.push("/");</span>
     },
-    methods: {
-        // this action is called if the store is empty to ensure that there is data
-        ...mapActions({
-            getUserData: 'userData/FETCH_USER_DATA'
-        }),
-        // this method redirects the user to the home page when called
-<span class="fstat-no" title="function not covered" >        returnHandler(){</span>
-<span class="cstat-no" title="statement not covered" >            this.$router.push('/')</span>
-        }
-    }
-}
+<span class="fstat-no" title="function not covered" >    setUserNameHandler() {</span>
+<span class="cstat-no" title="statement not covered" >      this.userNameFromStorage = sessionStorage.getItem("userName");</span>
+    },
+  },
+};
 &lt;/script&gt;
 &nbsp;
 &lt;style lang="scss" scoped&gt;
 .users-list {
-    padding: 20px;
-    &amp;__header{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &amp;__text-decoration{
-            font-size: 22px;
-            font-weight: 600;
-            color: black
-        }
-        &amp;__button{
-            width: 100px;
-        }
+  padding: 20px;
+  &amp;__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &amp;__text-decoration {
+      font-size: 22px;
+      font-weight: 600;
+      color: black;
     }
-    &amp;__repositories-list{
-        margin-top: 15px;
+    &amp;__button {
+      width: 100px;
     }
+  }
+  &amp;__repositories-list {
+    margin-top: 15px;
+  }
 }
-&nbsp;
-&lt;/style&gt;</pre></td></tr></table></pre>
+&lt;/style&gt;
+&nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Tue Dec 15 2020 14:18:58 GMT-0300 (GMT-03:00)
+                at Tue Dec 15 2020 15:21:16 GMT-0300 (GMT-03:00)
             </div>
         </div>
         <script src="../../../prettify.js"></script>
