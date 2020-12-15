@@ -1,4 +1,5 @@
 <template>
+    <!-- this is the appbar component that is being used in the default layout of the application -->
     <div class="bar-container">
       <div class="bar-container__title">
         <span class="bar-container__title__text-decoration"> Git Repository Search </span>

@@ -1,4 +1,5 @@
 <template>
+    <!-- here is the screen where the component that lists the user's repositories is located -->
     <users-list/>
 </template>
 
@@ -11,7 +12,3 @@ export default {
     }
 }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

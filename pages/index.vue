@@ -1,4 +1,5 @@
 <template>
+  <!-- this is the home page of the application. where the user finds the form that will be filled in to search for repositories -->
   <div class="home">
     <logo/>
     <search-user-form/>

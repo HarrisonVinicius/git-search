@@ -23,29 +23,29 @@
   "LazyBasicButton": {
     "description": "Auto imported from components/atoms/BasicButton/index.vue"
   },
-  "Logo": {
-    "description": "Auto imported from components/atoms/Logo/index.vue"
-  },
-  "LazyLogo": {
-    "description": "Auto imported from components/atoms/Logo/index.vue"
-  },
   "SearchInput": {
     "description": "Auto imported from components/atoms/SearchInput/index.vue"
   },
   "LazySearchInput": {
     "description": "Auto imported from components/atoms/SearchInput/index.vue"
   },
-  "RepositoriesListItem": {
-    "description": "Auto imported from components/molecules/RepositoriesListItem/index.vue"
+  "Logo": {
+    "description": "Auto imported from components/atoms/Logo/index.vue"
   },
-  "LazyRepositoriesListItem": {
-    "description": "Auto imported from components/molecules/RepositoriesListItem/index.vue"
+  "LazyLogo": {
+    "description": "Auto imported from components/atoms/Logo/index.vue"
   },
   "AppBar": {
     "description": "Auto imported from components/molecules/AppBar/index.vue"
   },
   "LazyAppBar": {
     "description": "Auto imported from components/molecules/AppBar/index.vue"
+  },
+  "RepositoriesListItem": {
+    "description": "Auto imported from components/molecules/RepositoriesListItem/index.vue"
+  },
+  "LazyRepositoriesListItem": {
+    "description": "Auto imported from components/molecules/RepositoriesListItem/index.vue"
   },
   "SearchUserForm": {
     "description": "Auto imported from components/molecules/SearchUserForm/index.vue"

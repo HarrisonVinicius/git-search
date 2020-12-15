@@ -1,4 +1,5 @@
 <template>
+  <!-- this is the basic layout of the application. it contains the components that will be shown on the screen regardless of where the user is -->
   <div class="app">
     <app-bar/>
     <div class="app__container">
@@ -15,12 +16,6 @@ import { AppBar } from "@/components/molecules";
 export default {
   components: {
     AppBar
-  },
-  data () {
-    return {
-      clipped: false,
-      fixed: false,
-    }
   }
 }
 </script>

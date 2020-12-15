@@ -1,4 +1,5 @@
 <template>
+    <!-- this is the logo component -->
     <div class="logo">
       <img class="logo__image" src="@/assets/index.png" alt="logo">
     </div>

@@ -1,4 +1,5 @@
 <template>
+    <!-- this is a simple and reusable component that has a slot for receiving content -->
     <div class="button">
         <slot class="button__text" />
     </div>

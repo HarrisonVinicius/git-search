@@ -1,4 +1,5 @@
 <template>
+    <!-- this component is the item that receives information from the repository in the list of repositories. this component has a prop responsible for feeding the data -->
     <div class="repositories-list-item">
         <div class="avatar-card">
             <img class="avatar-card__image" src="@/assets/hub.png" alt="avatar">
@@ -19,6 +20,7 @@
 export default {
     name:'RepositoriesListItem',
     props: {
+        // here the data from the parent component is stored
         itemData: {
             type: Object,
             default: () => {}
