@@ -18,7 +18,10 @@ $ yarn generate
 
 # run unit tests
 $ yarn test
+# ATENTION!
+# it may be necessary to run the command yarn add -D @ nuxt / babel-preset-app to run the unit tests
 # due to lack of development time this application has little coverage of unit tests at the moment
+# PS the watcher for unit test is disabled
 
 # some improvements need to be implemented in the application such as error handling in the search for user or e2e tests
 # the TDD methodology was not used in the implementation of this application
